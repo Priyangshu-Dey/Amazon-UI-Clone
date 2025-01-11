@@ -1,0 +1,2083 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+header {
+    width: 100vw;
+}
+
+.navbar {
+    background-color: #131921;
+    height: 60px;
+    color: white;
+    display: flex;
+}
+
+
+/*logo*/
+.nav-logo {
+    height: 60px;
+    width: 113px;
+    margin-left: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-box {
+    height: 50px;
+    width: 113px;
+    border-radius: 3%;
+    margin: 1px;
+    padding: 0 6px;
+    background-image: url(amazon-logos&icons2.png);
+    background-position-y: -36px;
+}
+
+.logo-box:hover {
+    border: 1px solid white;
+}
+
+
+
+/*location*/
+.nav-loc{
+    height: 60px;
+    width: 90.6px;
+    display: flex;
+    align-items: center;
+}
+
+.loc-box {
+    height: 50px;
+    width: 88.6px;
+    border-radius: 3%;
+    margin-left: 1.5px;
+    padding: 0 9px;
+    display: flex;
+}
+
+.loc-box:hover {
+    border: 1px solid white;
+}
+
+#location-pin {
+    margin-top: 21px;
+    padding: 0px 1px 0px 0px;
+    height: 18px;
+    width: 15px;
+    background-image: url(amazon-logos&icons2.png);
+    background-position-x: -71.5px;
+    background-position-y: -379px;
+}
+
+.line-box {
+    height: 100%;
+    padding: 9px 0;
+}
+
+.line1 {
+    font-size: 12px;
+    color: #CCCCCC;
+}
+
+.line2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+/*search*/
+.nav-search {
+    height: 100%;
+    width: 919px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-search-box {
+    height: 40px;
+    width: 898px;
+    margin: 0 6px;
+    padding: 10px 4px 10px 3px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+.nav-search-box ::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#drop-iconx {
+    position: absolute;
+    z-index: 2px;
+    left: 41px;
+    bottom: 23px;
+    color: rgba(105, 105, 105, 0.797);
+    font-size: 13px;
+}
+
+.search-dropdown {
+    width: 51px;
+    height: 40px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
+.search-field {
+    height: 41px;
+    width: 898px;
+}
+
+.search-btn {
+    width: 45px;
+    height: 40px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    background-color: #febd69;
+    background-image: url(amazon-logos&icons2.png);
+    background-position-x: -0px;
+    background-position-y: -280px;
+}
+
+
+
+
+/*nav-tools-container*/
+.nav-right-tools {
+    width: 383px;
+    height: 55px;
+    margin-top: 2px;
+    padding-top: 3px;
+    display: flex;
+}
+
+/*language*/
+.nav-lang-box {
+    height: 33px;
+    width: 54px;
+    margin-left: 1.5px;
+    border-radius: 3%;
+    padding: 9px 9px 7px 9px ;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-lang-box:hover {
+    border: 1px solid white;
+}
+
+.flag {
+    height: 14px;
+    width: 20px;
+    border-radius: 5%;
+    background-image: url(us-flag-icon.webp);
+    background-size: cover;
+
+}
+
+.en {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 1.5px;
+}
+
+#drop-icon1 {
+    font-size: 11px;
+    color: #a7acb2;
+    position: absolute;
+    left: 52px;
+    bottom: 15px;
+}
+
+
+
+
+/*Account*/
+.nav-account {
+    width: 131px;
+    height: 49px;
+    margin-left: 2px;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-account:hover {
+    border: 1px solid white;
+}
+
+.linetop {
+    height: 14px;
+    font-size: 12px;
+}
+
+.linedown {
+    height: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.drop-icon2 {
+    font-size: 11px;
+    color: #a7acb2;
+}
+
+
+
+/*Order*/
+.nav-order {
+    height: 49px;
+    width: 72px;
+    margin-left: 2px;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-order:hover {
+    border: 1px solid white;
+}
+
+.order-line1 {
+    font-size: 12px;
+}
+
+.order-line2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+/*Cart*/
+.nav-cart {
+    height: 49px;
+    width: 83px;
+    margin-left: 1.5px;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-cart:hover {
+    border: 1px solid white;
+}
+
+.cart-number-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 49px;
+    width: 30px;
+}
+
+.number {
+    font-weight: bold;
+    color: #F08804;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 14px;
+}
+
+.cart-icon {
+    height: 26px;
+    width: 38px;
+    background-image: url(amazon-logos&icons2.png);
+    background-position-x: -10px;
+    background-position-y: -340px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.line-cart {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-top: 12px;
+}
+
+
+
+
+
+/*SUB-NAV-BAR*/
+
+.subnav-main {
+    height: 39px;
+    padding-left: 11px;
+    background-color: #232f3e;
+    display: flex;
+    color: white;
+}
+
+
+/*subnav-left*/
+.nav-left {
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+}
+
+.nav-left:hover {
+    border: 1.5px solid #fff;
+}
+
+#menu-icon {
+    width: 17px;
+    height: 14px;
+    background-image: url(amazon-logos&icons2.png);
+    background-position-x: -173px;
+    background-position-y: -255px;
+}
+
+.text-all {
+    margin-left: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+/*subnav-fill*/
+.nav-fill {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-fill a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 9px 9px 10px 9px;
+    border-radius: 4%;
+}
+
+.nav-fill a:hover{
+    border: 1.5px solid #fff;
+}
+
+
+
+
+
+
+
+/*pagecontent*/
+
+.pagecontent {
+    height: 4568px;
+    width: 100%;
+    background-color: #E3E6E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.kitchen-photo {
+    width:  1500px;
+    height: 600px;
+    background-image: url(kitchen\ favouriites.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.layout-container {
+    width: 100%;
+    height: 4314px;
+    padding: 20px auto;
+    position: absolute;
+    top: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-layout {
+    padding: 20px 0px;
+    width: 1480px;
+    height: 860px;
+    display: grid;
+    grid-template-rows: repeat(12,1fr);
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.box {
+    background-color: white;
+    width: 351px;     /*width: 350px;height: 420px;*/
+    height: 385px;
+    justify-self: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.heading {
+    width: 310px;
+    height: 27px;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+h2 {
+    font-size: 21px;
+    color: #0F1111;
+}
+
+.pics {
+    width: 350px;
+    height: 303px;
+    margin-bottom: 44px;
+}
+
+/*links*/
+.blue-text {
+    width: 310px;
+    height: 17px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    position: absolute;
+    bottom: 0px;
+}
+.box a {
+    color: #007185;
+    font-size: 13px;
+}
+
+
+
+
+
+
+/*Gaming accessories*/
+
+.one .pics {
+    display: grid;
+    grid-template-rows: 115px 18px 115px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding-left: 20px;
+}
+
+
+.headsets {
+    background-image: url(headsets.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 115px;
+    width: 147px;
+}
+
+.keyboards {
+
+    background-image: url(keyboards.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+}
+
+.computer-mice {
+    background-image: url(computer-mice.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.chairs {
+    background-image: url(chairs.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+
+.one span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+/*Shop deals in Fashion*/
+
+.two .pics {
+    display: grid;
+    grid-template-rows: 115px 18px 115px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding-left: 20px;
+}
+
+
+.jeans {
+    background-image: url(Jeans\ under\ $50.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 115px;
+    width: 147px;
+}
+
+.tops {
+
+    background-image: url(Tops\ under\ $25.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+}
+
+.dress {
+    background-image: url(Dresses\ under\ $30.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.shoes {
+    background-image: url(Shoes\ under\ $50.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+
+.two span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+/*Refresh your space*/
+
+.three .pics {
+    display: grid;
+    grid-template-rows: 115px 18px 115px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding-left: 20px;
+}
+
+.dining {
+    background-image: url(dining.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 115px;
+    width: 147px;
+}
+
+.home {
+
+    background-image: url(home.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+}
+
+.kitchen {
+    background-image: url(kitchen.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.health-beauty {
+    background-image: url(health-beauty.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+
+.three span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+/*Deals in PCs*/
+
+.deals-pc {
+    height: 303px;
+    width: 310px;
+    margin: 0px 20px;
+    background-size: cover;
+    background-image: url(deals-pc.jpg);
+    background-size: cover;
+    background-position-x: -34px;
+}
+
+
+
+
+
+/*Toys under $25*/
+
+.toys {
+    height: 303px;
+    width: 310px;
+    margin: 0px 20px;
+    background-size: cover;
+    background-image: url(toys-$25.jpg);
+    background-size: cover;
+    background-position-x: -34px;
+}
+
+
+
+
+
+
+
+/*Fashion trends you like*/
+
+.six .pics {
+    display: grid;
+    grid-template-rows: 115px 18px 115px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding-left: 20px;
+}
+
+.dresses2 {
+    background-image: url(dresses-2.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 115px;
+    width: 147px;
+}
+
+.knits {
+
+    background-image: url(knit.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+}
+
+.jackets {
+    background-image: url(jackets.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.jewelry {
+    background-image: url(jewelry.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+
+.six span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+/*Beauty steals under $25*/
+
+.beauty {
+    height: 303px;
+    width: 310px;
+    margin: 0px 20px;
+    background-size: cover;
+    background-image: url(beauty.jpg);
+    background-size: cover;
+    background-position-x: -34px;
+}
+
+
+
+
+
+/*Home décor under $50*/
+
+.home-decor {
+    height: 303px;
+    width: 310px;
+    margin: 0px 20px;
+    background-size: cover;
+    background-image: url(home-decor.jpg);
+    background-size: cover;
+    background-position-x: -34px;
+}
+
+
+
+/*Best Sellers in Cell Phones & Accessories*/
+
+.nine {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 1425px;
+    height: 261.5px;
+    padding: 10px 20px;
+}
+
+.nine .heading {
+    height: 31.5px;
+    width: 1420px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.nine .h2 {
+    height: auto;
+    width: auto;
+}
+
+.feed-carousel {
+    height: 220px;
+    width: 1420px;
+}
+
+.feed-scrollbar {
+    width: 1420px;
+    height: 6px;
+}
+
+.item-list {
+    height: 200px;
+    width: 6141px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-list .item-1 {
+    background-color: darksalmon;
+    height: 200px;
+    width: 145px;
+}
+
+
+
+
+
+/*Best Sellers in Toys & Games*/
+
+.ten {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 1425px;
+    height: 261.5px;
+    padding: 10px 20px;
+}
+
+.ten .heading {
+    height: 31.5px;
+    width: 1420px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.ten .h2 {
+    height: auto;
+    width: auto;
+}
+
+.feed-carousel {
+    height: 220px;
+    width: 1420px;
+}
+
+.feed-scrollbar {
+    width: 1420px;
+    height: 6px;
+}
+
+.item-list {
+    height: 200px;
+    width: 6141px;
+    margin-bottom: 14px;
+    background-color: cadetblue;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-list .item-1 {
+    background-color: darksalmon;
+    height: 200px;
+    width: 145px;
+}
+
+
+
+
+
+
+
+
+
+/*Gaming merchandise*/
+
+.eleven .pics {
+    display: grid;
+    grid-template-rows: 115px 18px 115px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding-left: 20px;
+}
+
+.apparel {
+    background-image: url(apparel.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 115px;
+    width: 147px;
+}
+
+.hats {
+
+    background-image: url(hats.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+}
+
+.action-figures {
+    background-image: url(action-figures.jpg );
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.mugs {
+    background-image: url(mugs.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+
+.eleven span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+
+/*Shop activity trackers and smartwatches*/
+
+.twelve .heading {
+    height: 54px;
+    margin-bottom: 10px;
+}
+
+.watches {
+    height: 276px;
+    width: 310px;
+    margin: 0px 20px;
+    background-size: cover;
+    background-image: url(watches.jpg);
+    background-size: cover;
+    background-position-x: -34px;
+}
+
+
+
+
+
+/*Warm & welcoming decor*/
+
+.thirteen .pics {
+    display: grid;
+    grid-template-rows: 115px 18px 115px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding-left: 20px;
+}
+
+.wreaths-garland {
+    background-image: url(wearths-garlands.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 115px;
+    width: 147px;
+}
+
+.outdoor-decor {
+
+    background-image: url(outdoor-decor.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+}
+
+.pillow-throws {
+    background-image: url(pillows-throws.jpg );
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.wallart-mirrors {
+    background-image: url(wallart-mirrors.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+
+.thirteen span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+
+
+
+
+/*Great prices on shoes*/
+
+.great-price-shoes {
+    height: 303px;
+    width: 310px;
+    margin: 0px 20px;
+    background-size: cover;
+    background-image: url(great\ price\ on\ shoes.jpg);
+    background-size: cover;
+    background-position-x: -34px;
+}
+
+
+
+
+
+
+/*Best Sellers in Computers & Accessories*/
+
+.fifteen {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 1425px;
+    height: 261.5px;
+    padding: 10px 20px;
+}
+
+.fifteen .heading {
+    height: 31.5px;
+    width: 1420px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.fifteen .h2 {
+    height: auto;
+    width: auto;
+}
+
+.feed-carousel {
+    height: 220px;
+    width: 1420px;
+}
+
+.feed-scrollbar {
+    width: 1420px;
+    height: 6px;
+}
+
+.item-list {
+    height: 200px;
+    width: 6141px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-list .item-1 {
+    height: 200px;
+    width: 145px;
+}
+
+
+
+
+
+
+/*Best Sellers in Kitchen & Dining*/
+
+.sixteen {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 1425px;
+    height: 261.5px;
+    padding: 10px 20px;
+}
+
+.sixteen .heading {
+    height: 31.5px;
+    width: 1420px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.sixteen .h2 {
+    height: auto;
+    width: auto;
+}
+
+.feed-carousel {
+    height: 220px;
+    width: 1420px;
+}
+
+.feed-scrollbar {
+    width: 1420px;
+    height: 6px;
+}
+
+.item-list {
+    height: 200px;
+    width: 6141px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-list .item-1 {
+    height: 200px;
+    width: 145px;
+}
+
+
+
+
+
+
+
+/*Look your best this season*/
+
+.seventeen .pics {
+    display: grid;
+    grid-template-rows: 115px 18px 115px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding-left: 20px;
+}
+
+.for-her {
+    background-image: url(for-her.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 115px;
+    width: 147px;
+}
+
+.for-him {
+
+    background-image: url(for-him.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+}
+
+.for-teens {
+    background-image: url(for-teens.jpg );
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.for-kids {
+    background-image: url(for-kids.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+
+.seventeen span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+/*Level up your gaming*/
+
+.eighteen .pics {
+    display: grid;
+    grid-template-rows: 115px 18px 115px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding-left: 20px;
+}
+
+.pc-gaming {
+    background-image: url(pc-gaming.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 115px;
+    width: 147px;
+}
+
+.xbox {
+
+    background-image: url(x-box.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+}
+
+.playstation {
+    background-image: url(playstation.jpg );
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.nintendo {
+    background-image: url(nintendo-switch.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+
+.eighteen span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+/*Fantastic Finds for Home*/
+
+.nineteen .pics {
+    display: grid;
+    grid-template-rows: 115px 18px 115px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding-left: 20px;
+}
+
+.kitchen-box-18 {
+    background-image: url(kitchen-box-18.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 115px;
+    width: 147px;
+}
+
+.home-decor-box-18 {
+
+    background-image: url(decor-box-18.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+}
+
+.dining-box-18 {
+    background-image: url(dining-box-18.jpg );
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.smart-home-box-18 {
+    background-image: url(smart-home-box-18.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.nineteen span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+
+
+
+
+/*A whole new way to work*/
+
+.a-new-way-to-work {
+    height: 303px;
+    width: 310px;
+    margin: 0px 20px;
+    background-size: cover;
+    background-image: url(a-new-way-to-work.jpg);
+    background-size: cover;
+    background-position-x: -34px;
+}
+
+
+
+
+
+
+/*Best Sellers in Sports & Outdoors*/
+
+.twentyone {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 1425px;
+    height: 261.5px;
+    padding: 10px 20px;
+}
+
+.twentyone .heading {
+    height: 31.5px;
+    width: 1420px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.twentyone .h2 {
+    height: auto;
+    width: auto;
+}
+
+.feed-carousel {
+    height: 220px;
+    width: 1420px;
+}
+
+.feed-scrollbar {
+    width: 1420px;
+    height: 6px;
+}
+
+.item-list {
+    height: 200px;
+    width: 6141px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-list .item-1 {
+    height: 200px;
+    width: 145px;
+}
+
+
+
+
+
+
+/*Best Sellers in Beauty & Personal Care*/
+
+.twentytwo {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 1425px;
+    height: 261.5px;
+    padding: 10px 20px;
+}
+
+.twentytwo .heading {
+    height: 31.5px;
+    width: 1420px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.twentytwo .h2 {
+    height: auto;
+    width: auto;
+}
+
+.feed-carousel {
+    height: 220px;
+    width: 1420px;
+}
+
+.feed-scrollbar {
+    width: 1420px;
+    height: 6px;
+}
+
+.item-list {
+    height: 200px;
+    width: 6141px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-list .item-1 {
+    height: 200px;
+    width: 145px;
+}
+
+
+
+
+
+
+
+
+/*Have more fun with family*/
+
+
+.twentythree .pics {
+    display: grid;
+    grid-template-rows: 115px 18px 115px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding-left: 20px;
+}
+
+.outdoor-play-sets {
+    background-image: url(outdoor-play-sets.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 115px;
+    width: 147px;
+}
+
+.learning-toys {
+
+    background-image: url(learning-toys.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+}
+
+.action-figures-23 {
+    background-image: url(action-figures-23.jpg );
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.pretended-play-toys {
+    background-image: url(pretend-play-toys.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+
+.twentythree span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+
+
+
+
+/*Upgrade your office furniture*/
+
+.upgrade-office {
+    height: 303px;
+    width: 310px;
+    margin: 0px 20px;
+    background-size: cover;
+    background-image: url(Upgrade-furniture.jpg);
+    background-size: cover;
+    background-position-x: -34px;
+}
+
+
+
+
+
+/*Player's paradise starts here*/
+
+.players-paradise {
+    height: 303px;
+    width: 310px;
+    margin: 0px 20px;
+    background-size: cover;
+    background-image: url(players-paradise.jpg);
+    background-size: cover;
+    background-position-x: -34px;
+}
+
+
+
+
+
+
+
+
+/*Score the top PCs & Accessories*/
+
+
+.twentysix .pics {
+    display: grid;
+    grid-template-rows: 102px 18px 102px 18px;
+    grid-template-columns: 147px 147px;
+    column-gap: 15px;
+    padding: 0px 20px;
+    height: 276px;
+    width: 310px;
+}
+
+.twentysix .heading {
+    width: 310px;
+    height: 54px;
+}
+
+.twentysix .items {
+    width: 147px;
+    height: 102px;
+}
+
+.desktop {
+    background-image: url(desktops.jpg);
+    background-size: cover;
+    background-position: -14px;
+    margin-bottom: 12px;
+    height: 102px;
+    width: 147px;
+}
+
+.laptop {
+
+    background-image: url(laptops.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 102px;
+    width: 147px;
+}
+
+.hard-drive {
+    background-image: url(hard-drives.jpg );
+    background-size: cover;
+    background-position: -14px;
+    height: 102px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+.pc-accessories {
+    background-image: url(pc-accessories.jpg);
+    background-size: cover;
+    background-position: -14px;
+    height: 115px;
+    width: 147px;
+    margin-top: 30px;
+}
+
+
+.twentysix span {
+    color: #0F1111;
+    font-size: 12px;
+    font-weight: 540;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.text-line-2 {
+    margin-top: 30px;
+}
+
+.twentysix .blue-text {
+    width: 310px;
+    height: 17px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.twentysix .box a {
+    color: #007185;
+    font-size: 12px;
+}
+
+
+
+
+
+
+/*Most wished for in Movies & TV*/
+
+.twentyseven {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 1425px;
+    height: 261.5px;
+    padding: 10px 20px;
+}
+
+.twentyseven  .heading {
+    height: 31.5px;
+    width: 1420px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.twentyseven .h2 {
+    height: auto;
+    width: auto;
+}
+
+.feed-carousel {
+    height: 220px;
+    width: 1420px;
+}
+
+.feed-scrollbar {
+    width: 1420px;
+    height: 6px;
+}
+
+.item-list {
+    height: 200px;
+    width: 6141px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-list .item-1 {
+    height: 200px;
+    width: 145px;
+}
+
+
+
+
+/*content-section-2*/
+
+
+.content-section-2 {
+    padding-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.signin-container {
+    height: 125px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+.topline {
+    font-size: 13px;
+    margin-top: 40px;
+    color: #000;
+}
+
+.signin-btn {
+    height: 28px;
+    width: 238px;
+    font-size: 12px;
+    font-weight: 700;
+    background-image: linear-gradient( rgb(255, 224, 147) 10%, #f9bd17 90%);
+    /*background-color: #f9bd17;*/
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #848688;
+    
+}
+
+.bottomline {
+    font-size: 11px;
+}
+
+.bottomline a {
+    color: #007185;
+    font-size: 11px;
+    padding-left: 4px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*footer*/
+
+.footer-main-container {
+    height: 982px;
+    width: 100%;
+    background-color: #232F3E;
+    position: relative;
+}
+
+.back-to-top {
+    height: 49px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    background-color: #37475A;
+}
+
+.col-text-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.coltext {
+    height: 307px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.coltext-heading {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.coltext ul {
+    padding: 0px;
+}
+
+
+.coltext li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.coltext li a{
+    text-decoration: none;
+    color: #e0dfdf;
+    border: none;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.colgap {
+    width: 80px;
+    height: 291px;
+    padding: 0px 10px;
+}
+
+#two {
+    width: 164px;
+}
+
+#four ul {
+    width: 147px;
+}
+
+.footer-line {
+    margin-top: 40px;
+    border-top: 1px solid #3a4553;
+}
+
+
+.logo-block-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-logo-block {
+    width: 1000px;
+    height: 68px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-image: url(amazon-logos&icons2.png);
+    background-position-y: -90px;
+    background-position-x: -10px;
+    width: 76px;
+    height: 23px;
+    margin-left: 200px;
+}
+
+
+.right-block {
+    width: 426px;
+    height: 34px;
+    padding: 0px 7.2px;
+    margin-left: 70px;
+    display: flex;
+}
+
+.english {
+    width: 90px;
+    height: 20px;
+    padding: 6px 18px 6px 8px ;
+    border: 1px solid #848688;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #CCC;
+    margin-right: 7px;
+}
+
+.english i {
+    height: 15px;
+    width: 15px;
+}
+
+#up-dwn {
+    height: 12px;
+    width: 15px;
+    
+}
+
+.text-eng {
+    width: 42px;
+    height: 18px;
+    font-size: 13px;
+    padding-left: 7.8px;
+    font-weight: 500;
+}
+
+
+
+
+.currency {
+    width: 129px;
+    height: 21px;
+    padding: 6px 18px 6px 8px ;
+    border: 1px solid #848688;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #CCC;
+    margin-right: 7px;
+}
+
+
+.country {
+    width: 117px;
+    height: 20px;
+    padding: 6px 12px 6px 8px ;
+    border: 1px solid #848688;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #CCC;
+    display: flex;
+}
+
+.footer-flag {
+    width: 18px;
+    height: 12px;
+    background-image: url(flags.png);
+    background-position-y: -230px;
+}
+
+.text-us {
+    width: 95px;
+    height: 18px;
+    font-size: 13px;
+    padding-left: 7.8px;
+    font-weight: 500;
+}
+
+
+
+.middle-footer {
+    height: 315px;
+    width: 100%;
+    padding: 30px 0px;
+    margin-top: 20px;
+    background-color: #131A22;
+    display: flex;
+    justify-content: center;
+}
+
+.hihi {
+    width: 1000px;
+    height: 315px;
+}
+
+
+/*#999*/
+/*DDD*/
+
+
+.table-data {
+    padding: 0px 9px;
+    position: relative;
+}
+
+.table-links {
+    color: #DDD;
+    font-size: 12px;
+    font-weight: 900px;
+    text-decoration: none;
+    
+}
+
+.table-data a {
+    position: absolute;
+    top: 0px;
+}
+
+.table-links span {
+    color: #999;
+}
+
+.col-space {
+    width: 10px;
+    padding: 0px 10px;
+}
+
+.row-space {
+    height: 13px;
+    width: 95px;
+    padding: 0px 10px;
+}
+
+#blank {
+    width: 97px;
+    height: 54px;
+    padding: 0px 9px;
+}
+
+.row1 {
+    height: 80.4px;
+}
+
+
+.row2 {
+    height: 62.7px;
+}
+
+.row3 {
+    height: 62.7px;
+}
+
+
+.last-footer {
+    width: 100%;
+    height: 37px;
+    padding: 10px 0px 30px 0px;
+    background-color: #131A22;
+    color: #DDDDDD;
+    font-size: 12px;
+}
+
+.last-footer a{
+    color: #DDDDDD;
+    text-decoration: none;
+    padding: 0px 7.2px;
+}
+
+.last-footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    margin-top: 5px;
+    padding: 0px 7.2px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-icon {
+    width: 14.6px;
+    height: 14px;
+    padding: 0px 7.2px;
+    background-image: url(amazon-logos&icons2.png);
+    background-position-x: -136.5px;
+    background-position-y: -380px;
+}
